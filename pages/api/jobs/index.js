@@ -6,10 +6,10 @@ export default async function handler(req, res) {
         const { name, description, location, jobcatagory } = req.body
         const user = await db.User.findOne({where:{email:req.body.email}})
         const UserId = user.id
-        const cake = await cakeController.create({
+        const job = await jobController.create({
             name, description,  location, jobcatagory, UserId
         })
-        res.status(200).redirect(`/companies`);
+        res.status(200).redirect(`/company`);
     }
     // the redirect metod sends the user to the specified path
 }

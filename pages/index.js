@@ -1,7 +1,7 @@
   
 import styles from '../styles/Home.module.css';
 import db from '../database';
-import Card from '../components/Card';
+import Card from '../components/Job';
 import React from "react";
 /* import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css'; */
